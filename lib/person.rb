@@ -13,15 +13,15 @@ class Person
   end
 
   def happiness=(n)
+     n = 10 if n > 10
+     n = 0 if n < 0
      @happiness = n
-     @happiness = 10 if @happiness > 10
-     @happiness = 0 if @happiness < 0
   end
 
   def hygiene=(n)
+    n = 10 if n > 10
+    n = 0 if n < 0
     @hygiene = n
-    @hygiene = 10 if @hygiene > 10
-    @hygiene = 0 if @hygiene < 0
   end
 
   def happy?
